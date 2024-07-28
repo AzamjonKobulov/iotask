@@ -26,7 +26,7 @@
   @apply bg-[#ccc] rounded-full;
 }
 
-.task-details-list::-webkit-scrollbar {
+.no-scroll::-webkit-scrollbar {
   @apply w-0 h-0;
 }
 

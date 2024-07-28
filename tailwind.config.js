@@ -15,7 +15,8 @@ module.exports = {
       fontSize: {
         h1: ["1.5rem", "2.25rem"],
         h2: ["1.375rem", "2rem"],
-        h4: ["18px", "1.6875rem"],
+        h3: ["1.25rem", "1.875rem"],
+        h4: ["1.125rem", "1.6875rem"],
       },
       colors: {
         brand: {
