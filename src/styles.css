@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-gray-100 font-public text-brand-dark text-sm;
+  }
+}
+
+/* Scroll Styles */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-brand-gray-200;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-[#ccc] rounded-full;
+}
+
+.task-details-list::-webkit-scrollbar {
+  @apply w-0 h-0;
+}
+
+/* Input Styles */
+input[type="checkbox"]:checked + label span {
+  @apply bg-brand-blue;
+}
+
+input[type="checkbox"]:checked + label svg {
+  @apply block;
+}
+
+input[type="checkbox"]:checked + label p {
+  @apply font-normal text-brand-gray-400;
+}
