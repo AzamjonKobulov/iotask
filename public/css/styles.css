@@ -555,8 +555,20 @@ body{
 .ml-5{
   margin-left: 1.25rem;
 }
+.mt-11{
+  margin-top: 2.75rem;
+}
+.mt-12{
+  margin-top: 3rem;
+}
 .mt-3{
   margin-top: 0.75rem;
+}
+.mt-6{
+  margin-top: 1.5rem;
+}
+.mt-8{
+  margin-top: 2rem;
 }
 .block{
   display: block;
@@ -573,8 +585,14 @@ body{
 .h-0\.5{
   height: 0.125rem;
 }
+.h-1{
+  height: 0.25rem;
+}
 .h-1\.5{
   height: 0.375rem;
+}
+.h-10{
+  height: 2.5rem;
 }
 .h-11{
   height: 2.75rem;
@@ -585,8 +603,17 @@ body{
 .h-16{
   height: 4rem;
 }
+.h-2{
+  height: 0.5rem;
+}
+.h-2\.5{
+  height: 0.625rem;
+}
 .h-28{
   height: 7rem;
+}
+.h-3\.5{
+  height: 0.875rem;
 }
 .h-42{
   height: 2.625rem;
@@ -606,11 +633,17 @@ body{
 .h-9{
   height: 2.25rem;
 }
+.h-\[1\.375rem\]{
+  height: 1.375rem;
+}
 .h-full{
   height: 100%;
 }
 .h-px{
   height: 1px;
+}
+.max-h-\[calc\(100vh-112px\)\]{
+  max-height: calc(100vh - 112px);
 }
 .max-h-\[calc\(100vh-14rem\)\]{
   max-height: calc(100vh - 14rem);
@@ -627,6 +660,21 @@ body{
 .max-h-\[calc\(100vh-64px\)\]{
   max-height: calc(100vh - 64px);
 }
+.max-h-\[calc\(100vh-224px\)\]{
+  max-height: calc(100vh - 224px);
+}
+.max-h-\[calc\(100vh-160px\)\]{
+  max-height: calc(100vh - 160px);
+}
+.max-h-\[calc\(100vh-172px\)\]{
+  max-height: calc(100vh - 172px);
+}
+.max-h-\[calc\(100vh-176px\)\]{
+  max-height: calc(100vh - 176px);
+}
+.max-h-\[calc\(100vh-200px\)\]{
+  max-height: calc(100vh - 200px);
+}
 .min-h-max{
   min-height: -moz-max-content;
   min-height: max-content;
@@ -640,11 +688,29 @@ body{
 .w-1\.5{
   width: 0.375rem;
 }
+.w-10{
+  width: 2.5rem;
+}
+.w-10\/12{
+  width: 83.333333%;
+}
+.w-11{
+  width: 2.75rem;
+}
 .w-16{
   width: 4rem;
 }
 .w-2\/3{
   width: 66.666667%;
+}
+.w-20{
+  width: 5rem;
+}
+.w-3\.5{
+  width: 0.875rem;
+}
+.w-32{
+  width: 8rem;
 }
 .w-5{
   width: 1.25rem;
@@ -658,11 +724,26 @@ body{
 .w-7{
   width: 1.75rem;
 }
+.w-8{
+  width: 2rem;
+}
 .w-9{
   width: 2.25rem;
 }
+.w-\[180px\]{
+  width: 180px;
+}
+.w-\[22\.5rem\]{
+  width: 22.5rem;
+}
+.w-\[60px\]{
+  width: 60px;
+}
 .w-\[90\%\]{
   width: 90%;
+}
+.w-\[90px\]{
+  width: 90px;
 }
 .w-\[95\%\]{
   width: 95%;
@@ -674,14 +755,38 @@ body{
 .w-full{
   width: 100%;
 }
+.w-\[140px\]{
+  width: 140px;
+}
+.w-40{
+  width: 10rem;
+}
+.max-w-60{
+  max-width: 15rem;
+}
+.max-w-\[190px\]{
+  max-width: 190px;
+}
+.max-w-\[297px\]{
+  max-width: 297px;
+}
 .max-w-\[337px\]{
   max-width: 337px;
 }
 .max-w-\[524px\]{
   max-width: 524px;
 }
+.max-w-\[90px\]{
+  max-width: 90px;
+}
 .max-w-base{
   max-width: 90rem;
+}
+.max-w-16{
+  max-width: 4rem;
+}
+.max-w-\[140px\]{
+  max-width: 140px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -743,6 +848,17 @@ body{
 .gap-6{
   gap: 1.5rem;
 }
+.gap-8{
+  gap: 2rem;
+}
+.gap-7{
+  gap: 1.75rem;
+}
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -772,6 +888,11 @@ body{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 .divide-x > :not([hidden]) ~ :not([hidden]){
   --tw-divide-x-reverse: 0;
@@ -894,8 +1015,20 @@ body{
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-3{
+  padding: 0.75rem;
+}
 .p-6{
   padding: 1.5rem;
+}
+.p-9{
+  padding: 2.25rem;
+}
+.p-7{
+  padding: 1.75rem;
+}
+.p-5{
+  padding: 1.25rem;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -941,6 +1074,13 @@ body{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.pb-16{
+  padding-bottom: 4rem;
+}
 .pb-2\.5{
   padding-bottom: 0.625rem;
 }
@@ -949,6 +1089,9 @@ body{
 }
 .pb-4{
   padding-bottom: 1rem;
+}
+.pb-\[18px\]{
+  padding-bottom: 18px;
 }
 .pl-3{
   padding-left: 0.75rem;
@@ -959,14 +1102,26 @@ body{
 .pr-1{
   padding-right: 0.25rem;
 }
+.pr-8{
+  padding-right: 2rem;
+}
 .pt-3{
   padding-top: 0.75rem;
 }
 .pt-4{
   padding-top: 1rem;
 }
-.pb-16{
-  padding-bottom: 4rem;
+.pt-6{
+  padding-top: 1.5rem;
+}
+.pl-8{
+  padding-left: 2rem;
+}
+.pr-6{
+  padding-right: 1.5rem;
+}
+.pb-9{
+  padding-bottom: 2.25rem;
 }
 .text-center{
   text-align: center;
@@ -1040,6 +1195,7 @@ body{
 /* Scroll Styles */
 /* Width of the scrollbar */
 ::-webkit-scrollbar{
+  height: 0.25rem;
   width: 0.25rem;
 }
 
