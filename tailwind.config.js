@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         brand: {
           blue: "#4D7CFE",
+          "dark-blue": "#4169D8",
           pink: "#FE4D97",
           green: "#6DD230",
           dark: "#252631",
@@ -36,6 +37,7 @@ module.exports = {
       },
       spacing: {
         42: "2.625rem",
+        52: "3.25rem",
       },
       backgroundImage: {
         "task-details-bottom":
