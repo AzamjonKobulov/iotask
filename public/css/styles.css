@@ -579,9 +579,6 @@ body{
 .mt-8{
   margin-top: 2rem;
 }
-.mt-10{
-  margin-top: 2.5rem;
-}
 .block{
   display: block;
 }
@@ -663,6 +660,9 @@ body{
 .h-px{
   height: 1px;
 }
+.h-12{
+  height: 3rem;
+}
 .max-h-\[calc\(100vh-14rem\)\]{
   max-height: calc(100vh - 14rem);
 }
@@ -681,6 +681,9 @@ body{
 .max-h-\[calc\(100vh-96px\)\]{
   max-height: calc(100vh - 96px);
 }
+.min-h-\[calc\(100vh-120px\)\]{
+  min-height: calc(100vh - 120px);
+}
 .min-h-max{
   min-height: -moz-max-content;
   min-height: max-content;
@@ -688,8 +691,8 @@ body{
 .min-h-screen{
   min-height: 100vh;
 }
-.min-h-\[calc\(100vh-120px\)\]{
-  min-height: calc(100vh - 120px);
+.min-h-\[calc\(100vh-4\.75rem\)\]{
+  min-height: calc(100vh - 4.75rem);
 }
 .w-0\.5{
   width: 0.125rem;
@@ -770,6 +773,15 @@ body{
 .w-full{
   width: 100%;
 }
+.w-1\/5{
+  width: 20%;
+}
+.w-12{
+  width: 3rem;
+}
+.w-1\/2{
+  width: 50%;
+}
 .max-w-60{
   max-width: 15rem;
 }
@@ -790,6 +802,12 @@ body{
 }
 .max-w-base{
   max-width: 90rem;
+}
+.max-w-md{
+  max-width: 28rem;
+}
+.max-w-\[412px\]{
+  max-width: 412px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -911,6 +929,11 @@ body{
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.space-x-3\.5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.875rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .divide-x > :not([hidden]) ~ :not([hidden]){
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -945,6 +968,10 @@ body{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
+.rounded-b-lg{
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
 .border{
   border-width: 1px;
 }
@@ -953,6 +980,9 @@ body{
 }
 .border-r{
   border-right-width: 1px;
+}
+.border-t{
+  border-top-width: 1px;
 }
 .border-dashed{
   border-style: dashed;
@@ -1095,13 +1125,21 @@ body{
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
 }
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-\[1\.125rem\]{
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-16{
   padding-bottom: 4rem;
@@ -1148,23 +1186,11 @@ body{
 .pt-6{
   padding-top: 1.5rem;
 }
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-.pt-20{
-  padding-top: 5rem;
-}
-.pt-80{
-  padding-top: 20rem;
-}
-.pt-40{
-  padding-top: 10rem;
-}
-.pt-44{
-  padding-top: 11rem;
-}
 .pt-60{
   padding-top: 15rem;
+}
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 .text-center{
   text-align: center;
@@ -1287,12 +1313,30 @@ input[type="checkbox"]:checked + label p{
   color: rgb(119 140 162 / var(--tw-text-opacity));
 }
 
+.placeholder\:text-sm::-moz-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .placeholder\:font-light::-moz-placeholder{
   font-weight: 300;
 }
 
 .placeholder\:font-light::placeholder{
   font-weight: 300;
+}
+
+.placeholder\:font-normal::-moz-placeholder{
+  font-weight: 400;
+}
+
+.placeholder\:font-normal::placeholder{
+  font-weight: 400;
 }
 
 .placeholder\:text-brand-gray-400::-moz-placeholder{
@@ -1305,14 +1349,14 @@ input[type="checkbox"]:checked + label p{
   color: rgb(119 140 162 / var(--tw-text-opacity));
 }
 
-.hover\:bg-brand-gray-100:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 251 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-brand-dark-blue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(65 105 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-gray-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 251 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-brand-gray-300:hover{
@@ -1340,16 +1384,12 @@ input[type="checkbox"]:checked + label p{
     display: block;
   }
 
-  .xl\:p-0{
-    padding: 0px;
+  .xl\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
   .xl\:pt-40{
     padding-top: 10rem;
-  }
-
-  .xl\:pb-10{
-    padding-bottom: 2.5rem;
   }
 }
 

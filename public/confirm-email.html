@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>iotask | Kanban</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="max-w-base mx-auto flex items-center justify-between py-4 px-5"
+      >
+        <!-- Logo -->
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Buttons -->
+        <div class="flex items-center gap-1.5">
+          <button
+            class="h-11 bg-brand-gray-200 text-brand-gray-400 rounded-md hover:bg-brand-gray-300 transition-all duration-200 px-6"
+          >
+            Log In
+          </button>
+          <button
+            class="h-11 bg-brand-blue text-white rounded-md hover:bg-brand-dark-blue transition-all duration-200 px-6"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="min-h-[calc(100vh-4.75rem)] max-w-base mx-auto flex items-center justify-center"
+    >
+      <div
+        class="max-w-[412px] w-full bg-white border border-brand-gray-300 rounded-lg"
+      >
+        <!-- Header -->
+        <div class="border-b border-brand-gray-300 py-5 px-6">
+          <h1 class="text-h1 font-semibold">Confirm your email</h1>
+        </div>
+        <!-- Form -->
+        <form action="#" class="space-y-6 py-8 px-6">
+          <div class="space-y-3">
+            <!-- Enter 6 digits code -->
+            <label for="fullName" class="flex flex-col space-y-3">
+              <span class="text-xs">Enter 6 digits code</span>
+              <input
+                type="text"
+                class="h-52 font-medium border border-brand-gray-300 rounded-md outline-brand-blue placeholder:text-sm placeholder:text-brand-gray-400 placeholder:font-normal px-6"
+                placeholder="000 - 000"
+              />
+              <div class="flex items-center gap-1.5">
+                <span class="text-brand-gray-400"
+                  >Can’t find confirmation email?</span
+                >
+                <a href="#" class="text-brand-blue font-semibold"
+                  >Resend code</a
+                >
+              </div>
+            </label>
+          </div>
+          <div class="flex items-center justify-between">
+            <button
+              class="h-11 bg-brand-gray-200 text-brand-gray-400 rounded-md hover:bg-brand-gray-300 transition-all duration-200 px-6"
+            >
+              Back
+            </button>
+            <button
+              class="h-11 bg-brand-blue text-white rounded-md hover:bg-brand-dark-blue transition-all duration-200 px-6"
+            >
+              Confirm
+            </button>
+          </div>
+        </form>
+        <!-- Step Progress -->
+        <div
+          class="flex items-center justify-between bg-brand-gray-100 rounded-b-lg py-5 px-6"
+        >
+          <p class="text-xs text-brand-gray-400">Track a progress</p>
+          <!-- Progress -->
+          <div class="flex items-center gap-6">
+            <div class="w-12 h-1.5 bg-brand-gray-200 rounded-full">
+              <div class="w-1/2 h-full bg-brand-orange rounded-full"></div>
+            </div>
+            <!-- Steps -->
+            <div class="flex items-center gap-1.5 text-xs">
+              <span class="text-brand-gray-400">2</span>
+              <span class="text-brand-gray-400">/</span>
+              <span>3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
