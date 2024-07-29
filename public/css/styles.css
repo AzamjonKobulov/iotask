@@ -675,6 +675,15 @@ body{
 .max-h-\[calc\(100vh-200px\)\]{
   max-height: calc(100vh - 200px);
 }
+.max-h-\[calc\(100vh-124px\)\]{
+  max-height: calc(100vh - 124px);
+}
+.max-h-\[calc\(100vh-80px\)\]{
+  max-height: calc(100vh - 80px);
+}
+.max-h-\[calc\(100vh-96px\)\]{
+  max-height: calc(100vh - 96px);
+}
 .min-h-max{
   min-height: -moz-max-content;
   min-height: max-content;
@@ -1077,6 +1086,10 @@ body{
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .pb-16{
   padding-bottom: 4rem;
